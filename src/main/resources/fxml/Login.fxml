@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../styles/login.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.pepe.bankapp.controllers.LoginController">
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="200.0" styleClass="login_logo_container"
+         stylesheets="@../styles/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+         AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+      <Text strokeWidth="0.0" styleClass="LogoText_container" text="PoroBank" wrappingWidth="113.36199951171875">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow/>
+               </bumpInput>
+               <light>
+                  <Light.Distant/>
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+   </VBox>
+   <VBox alignment="CENTER" layoutX="221.0" layoutY="17.0" prefHeight="296.0" prefWidth="363.0">
+      <Label text="account type"/>
+      <ChoiceBox fx:id="account_selector" prefWidth="150.0"/>
+      <Label fx:id="payee_address" text="payee address"/>
+      <TextField fx:id="payee_address_field"/>
+      <Label fx:id="password_label" text="password"/>
+      <TextField fx:id="password_field"/>
+      <Button fx:id="login_btn" mnemonicParsing="false" text="Button"/>
+      <Label fx:id="error_label" text="error" textFill="#c60505"/>
+   </VBox>
+</AnchorPane>

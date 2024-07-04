@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../../styles/login.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.pepe.bankapp.controllers.client.ClientMenuController">
+    <VBox prefHeight="401.0" prefWidth="145.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="454.66666666666663" AnchorPane.topAnchor="0.0"
+          style="-fx-background-color: darkgreen"/>
+<!--    <ImageView>-->
+<!--        <VBox.margin>-->
+<!--            <Insets top="10.0"/>-->
+<!--        </VBox.margin>-->
+<!--        <Image url="/graphics/bankIcon.png"/>-->
+<!--    </ImageView>-->
+</AnchorPane>

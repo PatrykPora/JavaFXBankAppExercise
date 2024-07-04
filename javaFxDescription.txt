@@ -1,0 +1,23 @@
+JAVA FX
+
+in resources, we need to add .fxml files that describes access to our controllers
+
+it is a good practise when names of packages and structure is mirrored the controllers structure
+
+in resorces we also put our images and styles
+
+
+module-info.java is used to defines the module structure and dependencies for java module
+- requires specifies the modules that module depends on
+- opens allows other modules to access the specified package for reflection at runtime
+- exports makes the specified packages accessible to other modules
+
+
+we can open our fxml files in intelij scene builder or use external scene builder to work with our front part of app
+recommended gluon scene builder
+
+in .fxml files are ale labels text fields and so on -> those all elements should have been included in our controller class
+just move cursor on element in .fxml file and then chose add field to controller class
+
+CREATING CSS FILES IN NOT REALLY NECESSARY -> WE CAN USE SCENE BUILDER(IVEN THIS OF INTELIJ) TO CREATE THE WHOLE UI
+
