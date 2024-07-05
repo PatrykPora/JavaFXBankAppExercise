@@ -1,2 +1,4 @@
-package pl.pepe.bankapp.controllers.client;public class DashBoardController {
+package pl.pepe.bankapp.controllers.client;
+
+public class DashBoardController {
 }
