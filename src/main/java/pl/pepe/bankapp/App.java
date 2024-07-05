@@ -1,18 +1,15 @@
 package pl.pepe.bankapp;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import pl.pepe.bankapp.models.Model;
+
 
 public class App extends Application {
 
 
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/Login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setScene(scene);
-        stage.show();
+    public void start(Stage stage) {
+        Model.getInstance().getViewFactory().showLoginWindow();
     }
 }

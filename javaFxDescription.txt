@@ -27,3 +27,5 @@ it is a good idea to name controllers to know what they are. example we have lab
 
 CREATING CSS FILES IN NOT REALLY NECESSARY -> WE CAN USE SCENE BUILDER(IVEN THIS OF INTELIJ) TO CREATE THE WHOLE UI
 
+
+CONTROLLERS CLASSES

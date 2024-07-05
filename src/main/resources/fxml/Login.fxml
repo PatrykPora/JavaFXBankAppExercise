@@ -31,7 +31,7 @@
       <TextField fx:id="payee_address_field"/>
       <Label fx:id="password_label" text="password"/>
       <TextField fx:id="password_field"/>
-      <Button fx:id="login_btn" mnemonicParsing="false" text="Button"/>
-      <Label fx:id="error_label" text="error" textFill="#c60505"/>
+      <Button fx:id="login_btn" mnemonicParsing="false" text="login"/>
+      <Label fx:id="error_label"/>
    </VBox>
 </AnchorPane>
