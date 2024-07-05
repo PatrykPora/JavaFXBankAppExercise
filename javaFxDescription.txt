@@ -18,6 +18,12 @@ recommended gluon scene builder
 
 in .fxml files are ale labels text fields and so on -> those all elements should have been included in our controller class
 just move cursor on element in .fxml file and then chose add field to controller class
+REMEMBER to add our controller class in .fxml file
+for example --->>> fx:controller="pl.pepe.bankapp.controllers.client.DashBoardController
+all of us controllers like buttons labels etc. have to have name in scene builder -> then we will be able to add this controllers
+to our controller class by .fxml file --> on fxml in intellij we clik on the name of controller and choose to add field to our controller class
+it is a good idea to name controllers to know what they are. example we have label with amount then the name of controller could be -> amount_lable etc
+
 
 CREATING CSS FILES IN NOT REALLY NECESSARY -> WE CAN USE SCENE BUILDER(IVEN THIS OF INTELIJ) TO CREATE THE WHOLE UI
 
