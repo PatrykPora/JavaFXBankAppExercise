@@ -6,35 +6,34 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-
- <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="145.0" style="-fx-background-color: darkgreen" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.client.ClientMenuController">
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="145.0" style="-fx-background-color: darkgreen" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.client.ClientMenuController">
      <FontAwesomeIconView glyphName="BANK" size="36" textAlignment="CENTER" wrappingWidth="41.04759693145752">
       <VBox.margin>
          <Insets top="10.0" />
       </VBox.margin>
    </FontAwesomeIconView>
    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PoroBank" />
-   <Button fx:id="dashboard_btn" mnemonicParsing="false" text="dashboard">
+   <Button fx:id="dashboard_btn" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="dashboard">
       <VBox.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </VBox.margin>
    </Button>
-   <Button fx:id="transaction_btn" mnemonicParsing="false" text="transactions">
+   <Button fx:id="transaction_btn" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="transactions">
       <VBox.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </VBox.margin>
    </Button>
-   <Button fx:id="accounts_btn" mnemonicParsing="false" text="accounts">
+   <Button fx:id="accounts_btn" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="accounts">
       <VBox.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </VBox.margin>
    </Button>
-   <Button fx:id="profile_btn" mnemonicParsing="false" text="profile">
+   <Button fx:id="profile_btn" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="profile">
       <VBox.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </VBox.margin>
    </Button>
-   <Button fx:id="logout_btn" mnemonicParsing="false" text="logout">
+   <Button fx:id="logout_btn" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" text="logout">
       <VBox.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
       </VBox.margin>

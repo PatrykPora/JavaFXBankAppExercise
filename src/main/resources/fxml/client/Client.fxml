@@ -3,10 +3,13 @@
 <?import javafx.scene.layout.*?>
 
 <!--client.fxml includes two INDEPENDENT anchorPanes which are our views
-    as i removed controller here, i have to add this manually in a class-->
+    as i removed controller here, i have to add this manually in a class
+    in this example in ViewFactory class
+
+    we add fx:id to the borderPane cos we want to operate on it by controller -->
 
 
-<BorderPane xmlns="http://javafx.com/javafx"
+<BorderPane fx:id="client_parent" xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml">
 
     <left>

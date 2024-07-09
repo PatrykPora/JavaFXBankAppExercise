@@ -1,4 +1,6 @@
 JAVA FX
+based on youtube project https://www.youtube.com/watch?v=lkov5shwRQs&t=10623s
+
 
 in resources, we need to add .fxml files that describes access to our controllers
 

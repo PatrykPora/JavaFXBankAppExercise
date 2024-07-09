@@ -1,5 +1,7 @@
 package pl.pepe.bankapp.views;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -10,9 +12,22 @@ public class ViewFactory {
 
     // Client View
 
+    // client_selected_menu_item will be used to change the view on action
+    private final StringProperty CLIENT_SELECTED_MENU_ITEM;
     private AnchorPane dashboardView;
+    private AnchorPane transactionsView;
 
     public ViewFactory() {
+        this.CLIENT_SELECTED_MENU_ITEM = new SimpleStringProperty("");
+    }
+
+
+    public StringProperty getCLIENT_SELECTED_MENU_ITEM() {
+        return CLIENT_SELECTED_MENU_ITEM;
+    }
+
+    public StringProperty CLIENT_SELECTED_MENU_ITEMProperty() {
+        return CLIENT_SELECTED_MENU_ITEM;
     }
 
     public AnchorPane getDashboardView() {
@@ -25,6 +40,18 @@ public class ViewFactory {
             }
         }
         return dashboardView;
+    }
+
+
+    public AnchorPane getTransactionsView() {
+        if (transactionsView == null) {
+            try {
+                transactionsView = new FXMLLoader(getClass().getResource("/fxml/client/transactions.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return transactionsView;
     }
 
     public void showLoginWindow() {

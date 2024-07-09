@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.client.TransactionsController">
+   <children>
+      <Text layoutX="257.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRANSACTIONS" textAlignment="CENTER" textOrigin="TOP" AnchorPane.topAnchor="14.0" />
+      <ListView fx:id="transactions_listview" layoutX="14.0" layoutY="47.0" prefHeight="340.0" prefWidth="577.0" style="-fx-background-color: purple;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>
