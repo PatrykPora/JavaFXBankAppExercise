@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.admin.CreateClientController">
+   <Text layoutX="27.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="create new client account">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <VBox fillWidth="false" layoutX="21.0" layoutY="34.0" prefHeight="544.0" prefWidth="537.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="first name" />
+      <TextField fx:id="first_name_text_field" prefHeight="25.0" prefWidth="214.0">
+         <effect>
+            <Bloom />
+         </effect>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="last name" />
+      <TextField fx:id="last_name_text_field" prefHeight="25.0" prefWidth="209.0">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text layoutX="10.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+      <TextField fx:id="password_text_field" layoutX="10.0" layoutY="68.0" prefHeight="25.0" prefWidth="215.0">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Text layoutX="10.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="payee adress " />
+      <CheckBox fx:id="payee_address_check_box" mnemonicParsing="false" />
+      <Label fx:id="payee_address_label" prefHeight="36.0" prefWidth="211.0" style="-fx-background-color: brown;" text="Label">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+      <Text layoutX="10.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts:" />
+      <CheckBox fx:id="add_ror_check_box" layoutX="10.0" layoutY="153.0" mnemonicParsing="false" text="add ror account" />
+      <Text layoutX="10.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ror balance:" />
+      <TextField fx:id="ror_balance_text_field" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="209.0">
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </TextField>
+      <CheckBox fx:id="add_saving_acc_check_box" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" text="add saving account" />
+      <Text layoutX="10.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="saving acc balance:" />
+      <TextField fx:id="saving_acc_balance_text_field" layoutX="10.0" layoutY="238.0" prefHeight="25.0" prefWidth="208.0" />
+      <Button fx:id="create_new_client_button" mnemonicParsing="false" text="create new Client" />
+      <Label fx:id="error_label" text="error" />
+   </VBox>
+</AnchorPane>

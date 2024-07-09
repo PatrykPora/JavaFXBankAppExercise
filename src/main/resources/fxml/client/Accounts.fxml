@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.client.AccountsController">
+   <Text layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ror account" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   <VBox layoutX="14.0" layoutY="31.0" prefHeight="198.0" prefWidth="283.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="account number" />
+      <Label fx:id="ror_account_number_label" text="90 9090 1234 1234 1234 1234 1234 " />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="transaction limit" />
+      <Label fx:id="ror_transaction_limit_label" text="10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="date created" />
+      <Label fx:id="ror_date_created_label" text="2024-10-10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="balance" />
+      <Label fx:id="ror_balance_label" text="10000" />
+   </VBox>
+   <Text layoutX="22.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="saving accont" />
+   <VBox layoutX="22.0" layoutY="282.0" prefHeight="198.0" prefWidth="283.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="account number" />
+      <Label fx:id="saving_acc_number_label" text="90 5555 5555 5555 5555 5555 5555" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="transaction limit" />
+      <Label fx:id="saving_acc_transaction_limit_label" text="10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="date created" />
+      <Label fx:id="saving_acc_date_created_label" text="2024-10-10" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="balance" />
+      <Label fx:id="saving_acc_balance_label" text="509000" />
+   </VBox>
+   <Text layoutX="333.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="move money to saving account" />
+   <TextField fx:id="ror_to_saving_amount_text_field" layoutX="333.0" layoutY="58.0" />
+   <Button fx:id="transfer_to_saving_acc_button" layoutX="403.0" layoutY="90.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="transfer">
+      <graphic>
+         <FontAwesomeIconView glyphName="ARROW_DOWN" />
+      </graphic>
+   </Button>
+   <Text layoutX="334.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="move money to ror account" />
+   <TextField fx:id="saving_to_ror_amount_text_field" layoutX="333.0" layoutY="281.0" />
+   <Button fx:id="transfer_to_ror_button" contentDisplay="RIGHT" layoutX="407.0" layoutY="314.0" mnemonicParsing="false" text="transfer" textAlignment="LEFT">
+      <graphic>
+         <FontAwesomeIconView glyphName="ARROW_UP" />
+      </graphic>
+   </Button>
+</AnchorPane>

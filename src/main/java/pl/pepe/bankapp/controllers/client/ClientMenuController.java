@@ -2,6 +2,7 @@ package pl.pepe.bankapp.controllers.client;
 
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import pl.pepe.bankapp.models.Model;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,6 +17,24 @@ public class ClientMenuController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        addListeners();
+    }
 
+    private void addListeners() {
+        dashboard_btn.setOnAction(event -> onDashboard());
+        transaction_btn.setOnAction(event -> onTransactions());
+        accounts_btn.setOnAction(event -> onAccounts());
+    }
+
+    private void onTransactions() {
+        Model.getInstance().getViewFactory().getCLIENT_SELECTED_MENU_ITEM().set("Transactions");
+    }
+
+    private void onDashboard() {
+        Model.getInstance().getViewFactory().getCLIENT_SELECTED_MENU_ITEM().set("Dashboard");
+    }
+
+    private void onAccounts() {
+        Model.getInstance().getViewFactory().getCLIENT_SELECTED_MENU_ITEM().set("Accounts");
     }
 }
