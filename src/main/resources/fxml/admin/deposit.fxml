@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.pepe.bankapp.controllers.admin.DepositController">
+   <VBox layoutX="12.0" layoutY="102.0" prefHeight="418.0" prefWidth="577.0">
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="573.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="search by payee address"/>
+         <TextField fx:id="search_by_peyee_text_field"/>
+         <Button fx:id="search_button" mnemonicParsing="false" text="Search"/>
+      </HBox>
+      <ListView prefHeight="168.0" prefWidth="577.0"/>
+      <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0">
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="deposit section" textAlignment="CENTER"/>
+         <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount"
+               textAlignment="CENTER"/>
+         <TextField fx:id="amount_to_deposit_text_field" alignment="CENTER">
+            <VBox.margin>
+               <Insets bottom="5.0"/>
+            </VBox.margin>
+         </TextField>
+         <Button fx:id="do_deposit_button" mnemonicParsing="false" text="Deposit">
+            <graphic>
+               <FontAwesomeIconView glyphName="DOLLAR"/>
+            </graphic>
+         </Button>
+      </VBox>
+   </VBox>
+</AnchorPane>

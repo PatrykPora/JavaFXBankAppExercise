@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="45.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.pepe.bankapp.controllers.client.TransactionsCellController">
+    <VBox layoutX="7.0" layoutY="3.0" prefHeight="35.0" prefWidth="48.0" AnchorPane.bottomAnchor="5.0"
+          AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+        <FontAwesomeIconView fx:id="in_arrow_icon" glyphName="ARROW_RIGHT">
+            <VBox.margin>
+                <Insets bottom="5.0" top="2.0"/>
+            </VBox.margin>
+        </FontAwesomeIconView>
+        <FontAwesomeIconView fx:id="out_arrow_icon" glyphName="ARROW_LEFT">
+            <VBox.margin>
+                <Insets bottom="2.0"/>
+            </VBox.margin>
+        </FontAwesomeIconView>
+    </VBox>
+    <Label fx:id="transaction_date_label" layoutX="79.0" layoutY="14.0" text="2024-07-11"/>
+    <Label fx:id="sender_name_label" layoutX="168.0" layoutY="14.0" text="Patryk"/>
+    <Line endX="-77.0" layoutX="355.0" layoutY="23.0" rotate="90.0" startX="-100.0"/>
+    <Label fx:id="reciver_name_label" layoutX="315.0" layoutY="15.0" text="Anna"/>
+    <Label fx:id="transaction_amount_label" layoutX="426.0" layoutY="14.0" text="5000"/>
+</AnchorPane>

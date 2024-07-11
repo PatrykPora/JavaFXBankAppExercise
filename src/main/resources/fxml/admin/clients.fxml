@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="622.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.pepe.bankapp.controllers.admin.ClientsController">
+    <Text layoutX="36.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clients" />
+    <ListView fx:id="clients_list_view" layoutX="21.0" layoutY="58.0" prefHeight="528.0" prefWidth="564.0" />
+</AnchorPane>

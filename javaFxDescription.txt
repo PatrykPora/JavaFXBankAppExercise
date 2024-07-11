@@ -1,6 +1,6 @@
 JAVA FX
 based on youtube project https://www.youtube.com/watch?v=lkov5shwRQs&t=10623s
-4.29
+5.15
 
 in resources, we need to add .fxml files that describes access to our controllers
 
@@ -27,7 +27,7 @@ to our controller class by .fxml file --> on fxml in intellij we clik on the nam
 it is a good idea to name controllers to know what they are. example we have label with amount then the name of controller could be -> amount_lable etc
 
 
-CREATING CSS FILES IN NOT REALLY NECESSARY -> WE CAN USE SCENE BUILDER(IVEN THIS OF INTELIJ) TO CREATE THE WHOLE UI
+CREATING CSS FILES IN NOT REALLY NECESSARY -> WE CAN USE SCENE BUILDER(EVEN THIS OF INTELIJ) TO CREATE THE WHOLE UI
 
 
 CONTROLLERS CLASSES

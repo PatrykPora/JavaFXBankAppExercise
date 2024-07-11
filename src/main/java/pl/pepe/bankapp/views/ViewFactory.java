@@ -2,8 +2,6 @@ package pl.pepe.bankapp.views;
 
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -25,6 +23,10 @@ public class ViewFactory {
 //    admin views
 
     private AnchorPane createClientView;
+    private AnchorPane clientsView;
+
+    private AnchorPane depositView;
+
     private final ObjectProperty<AdminMenuOptions> ADMIN_SELECTED_MENU_ITEM;
 
     public ViewFactory() {
@@ -110,6 +112,29 @@ public class ViewFactory {
             }
         }
         return createClientView;
+    }
+
+    public AnchorPane getDepositView() {
+        if (depositView == null) {
+            try {
+                depositView = new FXMLLoader(getClass().getResource("/fxml/admin/deposit.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return depositView;
+    }
+
+
+    public AnchorPane getClientsView() {
+        if (clientsView == null) {
+            try {
+                clientsView = new FXMLLoader(getClass().getResource("/fxml/admin/clients.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return clientsView;
     }
 
     public ObjectProperty<AdminMenuOptions> getADMIN_SELECTED_MENU_ITEM() {
