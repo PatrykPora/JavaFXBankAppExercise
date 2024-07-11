@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="60.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.pepe.bankapp.controllers.admin.ClientCellController">
+   <FontAwesomeIconView glyphName="USER" layoutX="14.0" layoutY="23.0"/>
+   <HBox fillHeight="false" layoutX="35.0" layoutY="9.0" prefHeight="39.0" prefWidth="497.0">
+      <Label fx:id="fname_label" alignment="CENTER" text="patryk">
+         <font>
+            <Font size="10.0"/>
+         </font>
+      </Label>
+      <Label fx:id="lname_label" text="pora">
+         <font>
+            <Font size="10.0"/>
+         </font>
+      </Label>
+      <Label fx:id="peyee_address_label" text="\@wp.pl">
+         <font>
+            <Font size="10.0"/>
+         </font>
+      </Label>
+      <Label fx:id="ror_number_label" text="90 9090 9090 90909 90909 90909" textAlignment="CENTER">
+         <font>
+            <Font size="10.0"/>
+         </font>
+         <HBox.margin>
+            <Insets left="2.0" right="2.0"/>
+         </HBox.margin>
+      </Label>
+      <Label fx:id="saving_acc_label" text="15 4949 0303 8484 0404 8383">
+         <font>
+            <Font size="10.0"/>
+         </font>
+         <HBox.margin>
+            <Insets left="5.0" right="5.0"/>
+         </HBox.margin>
+      </Label>
+      <Label fx:id="date_creaated_label" alignment="TOP_RIGHT" contentDisplay="RIGHT" text="2024-07-08"
+             textAlignment="CENTER">
+         <font>
+            <Font size="10.0"/>
+         </font>
+         <HBox.margin>
+            <Insets right="10.0"/>
+         </HBox.margin>
+      </Label>
+   </HBox>
+   <Button fx:id="delete_label" layoutX="548.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0"
+           prefWidth="80.0" text="delete" AnchorPane.rightAnchor="30.0"/>
+</AnchorPane>
