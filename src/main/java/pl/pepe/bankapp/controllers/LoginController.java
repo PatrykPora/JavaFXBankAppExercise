@@ -35,10 +35,22 @@ public class LoginController implements Initializable {
         // javaFx does not give as a way to get the stage
         // we hack this by getting stage for example by windows label
         Stage stage = (Stage) error_label.getScene().getWindow();
-        Model.getInstance().getViewFactory().closeStage(stage);
+
 
         if (Model.getInstance().getViewFactory().getLoginAccountType() == AccountTypeUser.CLIENT) {
-            Model.getInstance().getViewFactory().showClientWindow();
+
+            Model.getInstance().evaluateClientCredentials(payee_address_field.getText(), password_field.getText());
+
+            if (Model.getInstance().isClientLoginSuccessFlag()) {
+                Model.getInstance().getViewFactory().showClientWindow();
+
+                Model.getInstance().getViewFactory().closeStage(stage);
+            } else {
+                payee_address_field.setText("");
+                password_field.setText("");
+                error_label.setText("wrong login credentials");
+            }
+
         } else {
             Model.getInstance().getViewFactory().showAdminWindow();
         }

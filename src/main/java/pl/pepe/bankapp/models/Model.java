@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.time.LocalDate;
 
 public class Model {
-// our Model class is a singleton class that is responsible to gives our views through the whole application
+    // our Model class is a singleton class that is responsible to gives our views through the whole application
 //    it has our ViewFactoryInstance that is responsible for showing views
     private static Model model;
     private final ViewFactory viewFactory;
@@ -18,7 +18,6 @@ public class Model {
     // client data section
     private Client client;
     private boolean clientLoginSuccessFlag;
-
 
 
     // admin data section
@@ -36,7 +35,7 @@ public class Model {
     }
 
     public static synchronized Model getInstance() {
-        if (model == null){
+        if (model == null) {
             model = new Model();
         }
         return model;
@@ -80,8 +79,11 @@ public class Model {
                 this.client.lastNameProperty().set(resultSet.getString("LastName"));
                 this.client.peyeeAddressProperty().set(resultSet.getString("PayeeAddress"));
                 String[] dataParts = resultSet.getString("Date").split("-");
-                LocalDate date = LocalDate.of(Integer.parseInt(dataParts[0]), Integer.parseInt(dataParts[1], Integer.parseInt(dataParts[2]));
+                LocalDate date = LocalDate.of(Integer.parseInt(dataParts[0]), Integer.parseInt(dataParts[1]), Integer.parseInt(dataParts[2]));
                 this.client.dateCreatedProperty().set(date);
+
+                this.clientLoginSuccessFlag = true;
+
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -8,8 +8,9 @@ public class DatabaseDriver {
 
     public DatabaseDriver() {
         try {
-            this.connection = DriverManager.getConnection("jdbc:sqllite:porobank.db");
-        } catch (SQLException e) {
+            Class.forName("org.sqlite.JDBC");
+            this.connection = DriverManager.getConnection("jdbc:sqlite:porobank.db");
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
