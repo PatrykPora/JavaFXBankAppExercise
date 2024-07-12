@@ -3,7 +3,6 @@ based on youtube project https://www.youtube.com/watch?v=lkov5shwRQs&t=10623s
 
 for basic hierarchy of typical java fx program go to https://www.javatpoint.com/javafx-application-structure
 
-6.44
 in resources, we need to add .fxml files that describes access to our controllers
 
 it is a good practise when names of packages and structure is mirrored the controllers structure
